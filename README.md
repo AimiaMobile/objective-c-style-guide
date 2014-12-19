@@ -1,6 +1,8 @@
 # Aimia Objective-C Style Guide
 
-This style guide outlines the coding conventions of the iOS team at Aimia. It is a fork of The New York Times style guide.
+This style guide outlines the coding conventions of the iOS team at Aimia. It is a fork of The New York Times style guide. It also contains elements from these style guides:
+* [Futurice](https://github.com/futurice/ios-good-practices)
+* [Sam Soffes](https://gist.github.com/soffes/812796)
 
 ## Introduction
 
@@ -136,6 +138,13 @@ In method signatures, there should be a space after the scope (-/+ symbol). Ther
 ```objc
 - (void)setExampleText:(NSString *)text image:(UIImage *)image;
 ```
+
+There should **never** be a space before or after colons. If the parameter type is a pointer, there should **always** be a space between the class and the `*`.
+
+There should **always** be a space between the end of the method and the opening bracket. The opening bracket should **never** be on the following line.
+
+There should **always** be two new lines between methods. This matches some Xcode templates (although they change a lot) and increase readability.
+
 ## Variables
 
 Variables should be named as descriptively as possible. Single letter variable names should be avoided except in `for()` loops.
